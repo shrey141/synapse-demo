@@ -1,5 +1,5 @@
 {
-	"name": "SQL script 1",
+	"name": "Test Script",
 	"properties": {
 		"content": {
 			"query": "SELECT\n    TOP 100 *\nFROM\n    OPENROWSET(\n        BULK 'https://hcscpocdemo.dfs.core.windows.net/poc/NYCTripSmall.parquet',\n        FORMAT='PARQUET'\n    ) AS [result]",
