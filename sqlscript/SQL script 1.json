@@ -2,7 +2,7 @@
 	"name": "SQL script 1",
 	"properties": {
 		"content": {
-			"query": "SELECT\n    TOP 10 *\nFROM\n    OPENROWSET(\n        BULK 'https://hcscpocdemo.dfs.core.windows.net/poc/NYCTripSmall.parquet',\n        FORMAT='PARQUET'\n    ) AS [result]",
+			"query": "SELECT\n    TOP 15 *\nFROM\n    OPENROWSET(\n        BULK 'https://hcscpocdemo.dfs.core.windows.net/poc/NYCTripSmall.parquet',\n        FORMAT='PARQUET'\n    ) AS [result]",
 			"metadata": {
 				"language": "sql"
 			},
